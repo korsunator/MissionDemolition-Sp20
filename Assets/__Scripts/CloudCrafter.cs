@@ -11,7 +11,7 @@ public class CloudCrafter : MonoBehaviour
     public Vector3 cloudPosMax = new Vector3(150, 100, 10);
     public float cloudScaleMin = 1;
     public float cloudScaleMax = 3;
-    public float cloudSpeedMult = 0.5f;
+    public float cloudSpeedMult = 0.5f; 
 
     private GameObject[] cloudInstances;
     
@@ -20,7 +20,7 @@ public class CloudCrafter : MonoBehaviour
         cloudInstances = new GameObject[numClouds];
         GameObject anchor = GameObject.Find("CloudAnchor");
         GameObject cloud;
-        for(int i =0; i<numClouds, i++)
+        for(int i =0; i<numClouds; i++)
         {
             cloud = Instantiate<GameObject>(cloudPrefab);
             Vector3 cPos = Vector3.zero;
